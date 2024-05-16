@@ -1,0 +1,15 @@
+type: edu
+custom_name: One small step for man...
+files:
+  - name: src/index.html
+    visible: true
+    learner_created: false
+  - name: src/css/main.css
+    visible: true
+    learner_created: false
+  - name: hstest/test.js
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11735#comment
+status: Solved
+record: 2

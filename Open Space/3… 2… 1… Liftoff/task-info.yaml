@@ -1,0 +1,18 @@
+type: edu
+custom_name: 3… 2… 1… Liftoff!
+files:
+  - name: src/index.html
+    visible: true
+    learner_created: false
+  - name: src/css/main.css
+    visible: true
+    learner_created: false
+  - name: src/js/main.js
+    visible: true
+    learner_created: false
+  - name: hstest/test.js
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11737#comment
+status: Solved
+record: 4

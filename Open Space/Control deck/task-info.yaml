@@ -1,0 +1,32 @@
+type: edu
+files:
+  - name: src/index.html
+    visible: true
+    learner_created: false
+  - name: src/css/main.css
+    visible: true
+    learner_created: false
+  - name: hstest/test.js
+    visible: false
+    learner_created: false
+  - name: src/img/space.png
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/img/rocket.png
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/img/mars.png
+    visible: true
+    is_binary: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/11734#comment
+status: Failed
+feedback:
+  message: |-
+    Error: Wrong answer in test #1
+
+    There are some mismatches with suggested structure or elements naming on the space section level
+  time: "Thu, 16 May 2024 06:36:38 UTC"
+record: 1

@@ -1,0 +1,17 @@
+type: edu
+files:
+  - name: src/index.html
+    visible: true
+    learner_created: false
+  - name: src/css/main.css
+    visible: true
+    learner_created: false
+  - name: hstest/test.js
+    visible: false
+    learner_created: false
+  - name: src/js/main.js
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/11736#comment
+status: Solved
+record: 3

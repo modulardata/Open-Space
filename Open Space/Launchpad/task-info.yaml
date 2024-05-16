@@ -1,0 +1,29 @@
+type: edu
+files:
+  - name: hstest/test.js
+    visible: false
+    learner_created: false
+  - name: src/index.html
+    visible: true
+    learner_created: false
+  - name: src/css/main.css
+    visible: true
+    learner_created: true
+  - name: src/img/space.png
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/img/rocket.png
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/img/mars.png
+    visible: true
+    is_binary: true
+    learner_created: true
+feedback_link: https://hyperskill.org/projects/143/stages/771/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 16 May 2024 06:37:12 UTC"
+record: 5
