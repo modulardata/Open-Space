@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    background-image: url("../img/space.png");
+    overflow: hidden;
+}
+
+.planet-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.planet {
+    position: absolute;
+    transform: scale(.6);
+    bottom: -12.5vw;
+    left: -12.5vw;
+    z-index: 2;
+}
+
+.rocket {
+    position: absolute;
+    transform: rotate(25deg) scale(.5);
+    z-index: 1;
+    bottom: 15vh;
+    left: 10vh;
+}
