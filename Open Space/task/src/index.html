@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/main.css">
   <title>Open Space</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script async src="js/main.js"></script>
 </head>
 <body>
 
 <div class="space">
+
   <div class="planet-area">
     <img class="planet" src="img/mars.png" alt="planet">
     <img class="rocket" src="img/rocket.png" alt="rocket">
@@ -16,27 +18,33 @@
   <div class="control-panel">
 
     <div class="control-panel__inner">
-      <input type="password" placeholder="Enter password to unlock">
-      <input type="button" value="Ok">
+
+      <input id="password" name="password" type="password" placeholder="Enter password to unlock">
+      <input id="unlock" class="ok-button" type="button" value="Ok">
 
       <div class="check-buttons">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+        <input type="checkbox" class="check" disabled>
+        <input type="checkbox" class="check" disabled>
+        <input type="checkbox" class="check" disabled>
+        <input type="checkbox" class="check" disabled>
+        <input type="checkbox" class="check" disabled>
+        <input type="checkbox" class="check" disabled>
       </div>
+
       <div class="levers">
-        <input type="range">
-        <input type="range">
-        <input type="range">
-        <input type="range">
-        <input type="range">
+        <input type="range" class="range" orient="vertical" min="0" max="10" disabled>
+        <input type="range" class="range" orient="vertical" min="0" max="10" disabled>
+        <input type="range" class="range" orient="vertical" min="0" max="10" disabled>
+        <input type="range" class="range" orient="vertical" min="0" max="10" disabled>
+        <input type="range" class="range" orient="vertical" min="0" max="10" disabled>
       </div>
-      <input type="submit" value="Launch">
-    </div>
-  </div>
-</div>
+
+      <input type="button" id="launch-btn" class="launch-btn" value="Launch" disabled>
+
+    </div> <!-- .control-panel__inner -->
+
+  </div> <!-- .control-panel -->
+
+</div> <!-- .space -->
 </body>
 </html>

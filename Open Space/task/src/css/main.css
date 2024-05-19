@@ -4,19 +4,21 @@
 
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 .space {
     display: flex;
     background-image: url("../img/space.png");
+    width: 1280px;
     height: 680px;
-    width: 900px;
     margin: 0 auto;
 }
 
 .planet-area {
     position: relative;
-    top: 327px;
+    top: 329px;
     left: 2px;
 }
 
@@ -32,81 +34,100 @@ body {
     height: 120px;
     transform: rotate(30deg);
     left: 183px;
-    top: 52px;
+    top: 30px;
 }
+
+
+/* Control Panel Layout */
 
 .control-panel {
     background-color: #1f1f1f;
-    margin-left: 500px;
-    margin-top: 350px;
-    padding: 15px;
+    margin-left: 850px;
+    margin-top: 340px;
+    padding: 8px;
     width: 320px;
-    height: 160px;
+    height: 215px;
     border-width: 4px;
     border-style: solid;
     border-image: linear-gradient(to right, firebrick, darkcyan) 1;
-    background: radial-gradient(rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0.3) 32%, rgba(255, 255, 255, 0) 33%) repeat scroll 0px 0px / 470px 470px, radial-gradient(rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.1) 11%, rgba(255, 255, 255, 0.3) 13%, rgba(255, 255, 255, 0) 14%) repeat scroll 0px 0px / 970px 970px, radial-gradient(rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.2) 17%, rgba(255, 255, 255, 0.43) 19%, rgba(255, 255, 255, 0) 20%) repeat scroll 0px 110px / 410px 410px, radial-gradient(rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.2) 11%, rgba(255, 255, 255, 0.4) 13%, rgba(255, 255, 255, 0) 14%) repeat scroll -130px -170px / 610px 610px, radial-gradient(rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.2) 11%, rgba(255, 255, 255, 0.4) 13%, rgba(255, 255, 255, 0) 14%) repeat scroll 130px 370px / 530px 530px, radial-gradient(rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.1) 11%, rgba(255, 255, 255, 0.2) 13%, rgba(255, 255, 255, 0) 14%) repeat scroll 0px 0px / 730px 730px, rgb(132, 11, 42) linear-gradient(45deg, rgb(52, 55, 2) 0%, rgb(24, 69, 0) 20%, rgb(24, 117, 70) 30%, rgb(0, 103, 130) 40%, rgb(11, 18, 132) 50%, rgb(118, 14, 161) 60%, rgb(131, 9, 110) 70%, rgb(132, 11, 42) 80%, rgb(177, 62, 18) 90%, rgb(226, 116, 18) 100%) repeat scroll 0% 0% / 100% 100%;
     --darkreader-inline-bgimage: radial-gradient(rgba(24, 26, 27, 0) 0px, rgba(24, 26, 27, 0.15) 30%, rgba(24, 26, 27, 0.3) 32%, rgba(24, 26, 27, 0) 33%), radial-gradient(rgba(24, 26, 27, 0) 0px, rgba(24, 26, 27, 0.1) 11%, rgba(24, 26, 27, 0.3) 13%, rgba(24, 26, 27, 0) 14%), radial-gradient(rgba(24, 26, 27, 0) 0px, rgba(24, 26, 27, 0.2) 17%, rgba(24, 26, 27, 0.43) 19%, rgba(24, 26, 27, 0) 20%), radial-gradient(rgba(24, 26, 27, 0) 0px, rgba(24, 26, 27, 0.2) 11%, rgba(24, 26, 27, 0.4) 13%, rgba(24, 26, 27, 0) 14%), radial-gradient(rgba(24, 26, 27, 0) 0px, rgba(24, 26, 27, 0.2) 11%, rgba(24, 26, 27, 0.4) 13%, rgba(24, 26, 27, 0) 14%), radial-gradient(rgba(24, 26, 27, 0) 0px, rgba(24, 26, 27, 0.1) 11%, rgba(24, 26, 27, 0.2) 13%, rgba(24, 26, 27, 0) 14%), linear-gradient(45deg, #2a2c02 0%, #133700 20%, #135e38 30%, #005268 40%, #090e6a 50%, #5e0b81 60%, #690758 70%, #6a0922 80%, #8e320e 90%, #b55d0e 100%);
     --darkreader-inline-bgcolor: #6a0922;
 }
 
+.control-panel {
+    background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 .control-panel__inner {
+    text-align: center;
+    justify-content: center;
+}
+
+#password {
+    width: 145px;
+    height: 15px;
+    color: #8e320e;
+    text-align: center;
+    font-size: .8em;
+    padding: 3px;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#unlock {
+    height: 17px;
+    padding: 2px;
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+    background: darkorange;
+    cursor: pointer;
 }
 
 .check-buttons {
     display: flex;
-    width: 260px;
-    height: 10px;
-    padding-top: 5px;
-}
-
-.check-buttons input {
-    width: 150px;
-    transform: translate(30px, 10px);
-    margin: 0;
+    justify-content: space-around;
+    padding: 10px 10px;
 }
 
 .levers {
     display: flex;
-    width: 150px;
-    height: 70px;
-    padding: 0;
+    justify-content: space-around;
+
 }
 
-.levers input {
+.range {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* Chromium */
+    width: 60px;
+    height: 100px;
+    /*padding: 0 5px;*/
+    outline: none;
+}
+
+.range:disabled {
+    /*background: green;*/
+
+}
+
+#launch-btn {
     width: 55px;
-    margin: 0;
-    transform: translate(20px, 25px) rotate(-90deg);
-}
-
-input[type="password"] {
-    width: 140px;
-    height: 15px;
-    color:dodgerblue;
-    font-size: .8em;
-    padding: 4px;
-    transform: translate(90px, 0px);
-    border: 2px solid darkcyan;
-    border-radius: 5px;
-}
-
-input[type="button"] {
-    height: 20px;
-    padding: 3px;
-    transform: translate(90px, 2px);
-    border: 2px solid cyan;
-    border-radius: 8px;
-    background: darkcyan;
-
-
-}
-
-input[type="submit"] {
-    height: 5px;
-    transform: translate(135px, 28px);
-    padding: 4px 3px 15px 4px;
-    background: firebrick;
+    height: 25px;
+    border-radius: 40%;
+    margin-top: 5%;
+    background: red;
     border: 2px solid orangered;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    color: black;
 }
+
+
+#launch-btn:disabled {
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
