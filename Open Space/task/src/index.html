@@ -6,34 +6,36 @@
   <title>Open Space</title>
 </head>
 <body>
+
 <div class="space">
   <div class="planet-area">
-    <img src="img/mars.png" alt="planet" class="planet">
-    <img src="img/rocket.png" alt="rocket" class="rocket">
+    <img class="planet" src="img/mars.png" alt="planet">
+    <img class="rocket" src="img/rocket.png" alt="rocket">
   </div>
 
-  <!--Control Panel-->
   <div class="control-panel">
 
-    <input type="password" placeholder="Enter password to unlock" name="pass">
-    <input type="button" value="OK" >
+    <div class="control-panel__inner">
+      <input type="password" placeholder="Enter password to unlock">
+      <input type="button" value="Ok">
 
-    <div class="check-buttons">
-      <input type="checkbox" name="" id="box1">
-      <input type="checkbox" name="" id="box2">
-      <input type="checkbox" name="" id="box3">
-      <input type="checkbox" name="" id="box4">
-      <input type="checkbox" name="" id="box5">
-      <input type="checkbox" name="" id="box6">
+      <div class="check-buttons">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+      </div>
+      <div class="levers">
+        <input type="range">
+        <input type="range">
+        <input type="range">
+        <input type="range">
+        <input type="range">
+      </div>
+      <input type="submit" value="Launch">
     </div>
-    <div class="levers">
-      <input class="input-range" orient="vertical" type="range" step="0.5" value="5" min="1" max="10">
-      <input class="input-range" orient="vertical" type="range" step="0.5" value="5" min="1" max="10">
-      <input class="input-range" orient="vertical" type="range" step="0.5" value="5" min="1" max="10">
-      <input class="input-range" orient="vertical" type="range" step="0.5" value="5" min="1" max="10">
-      <input class="input-range" orient="vertical" type="range" step="0.5" value="5" min="1" max="10">
-    </div>
-    <input type="button" value="Launch">
   </div>
 </div>
 </body>
